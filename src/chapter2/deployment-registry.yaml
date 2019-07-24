@@ -18,7 +18,7 @@ spec:
         volumeMounts:
         - name: docker
           mountPath: /var/run/docker.sock
-        - name: registry-pvc
+        - name: storage
           mountPath: /var/lib/registry
         ports:
         - containerPort: 5000
