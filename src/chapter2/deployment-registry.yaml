@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: kube-registry-v1
   labels:
-    app: registry
+    app: kube-registry
 spec:
   strategy:
     type: Recreate
@@ -38,9 +38,8 @@ spec:
           path: /var/run/docker.sock
       - name: registry-storage
         persistentVolumeClaim:
-          # Name of the PVC
           claimName: registry-pvc
- ---
+---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
