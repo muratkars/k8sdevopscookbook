@@ -18,7 +18,7 @@ spec:
         volumeMounts:
         - name: docker
           mountPath: /var/run/docker.sock
-        - name: registry-persistent-storage
+        - name: registry-pvc
           mountPath: /var/lib/registry
         ports:
         - containerPort: 5000
@@ -39,12 +39,12 @@ spec:
       - name: storage
         persistentVolumeClaim:
           # Name of the PVC
-          claimName: registry-pv-claim
+          claimName: registry-pvc
  ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: registry-pv-claim
+  name: registry-pvc
   labels:
     app: kube-registry-pv-claim
 spec:
