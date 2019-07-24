@@ -9,13 +9,11 @@ spec:
   ports:
     - name: registry
       port: 5000
-      targetPort: 5000
       protocol: TCP     
       nodePort: 30120
     - name: registry-ui
       port: 80
       protocol: TCP
-      targetPort: 5000
       nodePort: 30220      
   selector:
     app: kube-registry
