@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmuratkars%2Fk8sdevopscookbook.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmuratkars%2Fk8sdevopscookbook?ref=badge_shield)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/muratkars/k8sdevopscookbook/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
